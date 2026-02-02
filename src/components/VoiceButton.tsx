@@ -29,21 +29,21 @@ export default function VoiceButton({
     <div className="mt-4">
       <button
         onClick={isListening ? onStop : onStart}
-        className={`w-full py-4 px-6 rounded-xl font-medium text-white transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-3 shadow-lg ${
+        className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-xl font-medium text-white transition-all touch-manipulation active:scale-95 flex items-center justify-center gap-2 sm:gap-3 shadow-lg ${
           isListening
             ? 'bg-gradient-to-r from-red-500 to-pink-500 animate-pulse'
-            : 'bg-gradient-to-r from-purple-500 to-pink-500'
+            : 'bg-gradient-to-r from-purple-500 to-pink-500 active:opacity-90'
         }`}
       >
         {isListening ? (
           <>
-            <MicOff className="w-6 h-6" />
-            <span className="text-lg">正在录音中... 点击停止</span>
+            <MicOff className="w-5 h-5 sm:w-6 sm:h-6" />
+            <span className="text-base sm:text-lg">正在录音中... 点击停止</span>
           </>
         ) : (
           <>
-            <Mic className="w-6 h-6" />
-            <span className="text-lg">🎤 点击开始语音输入</span>
+            <Mic className="w-5 h-5 sm:w-6 sm:h-6" />
+            <span className="text-base sm:text-lg">🎤 点击开始语音输入</span>
           </>
         )}
       </button>

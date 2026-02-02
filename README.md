@@ -53,12 +53,47 @@ npm run build
 npm run preview
 ```
 
+### 📱 iOS 应用构建
+
+```bash
+# 同步到 iOS（需要 Mac + Xcode）
+npm run cap:sync:ios
+
+# 在 Xcode 中打开
+npm run cap:open:ios
+
+# 生成应用图标
+npm run icons:generate
+```
+
+**详细说明**：
+- 📖 **PWA 安装**（推荐）：查看 [QUICK_START_IOS.md](./QUICK_START_IOS.md)
+- 📖 **原生应用构建**：查看 [IOS_INSTALLATION_GUIDE.md](./IOS_INSTALLATION_GUIDE.md)
+
+## 📱 在 iPhone 上使用
+
+### 方式一：PWA（推荐 - 无需 Mac）
+
+1. 部署到 Vercel/Netlify（免费）
+2. 在 iPhone Safari 打开网址
+3. 点击"分享" → "添加到主屏幕"
+4. 像原生 App 一样使用
+
+**详细步骤**：[QUICK_START_IOS.md](./QUICK_START_IOS.md)
+
+### 方式二：原生应用（需要 Mac）
+
+1. 使用 Capacitor 构建 iOS 应用
+2. 可上架 App Store
+
+**详细步骤**：[IOS_INSTALLATION_GUIDE.md](./IOS_INSTALLATION_GUIDE.md)
+
 ## 🎯 使用说明
 
 ### 语音输入
 
 1. 点击 "🎤 点击开始语音输入" 按钮
-2. 允许浏览器访问麦克风权限
+2. 允许浏览器/应用访问麦克风权限
 3. 说出你的待办事项
 4. 语音识别完成后会自动填充到输入框
 5. 选择优先级和分类后点击"添加"
@@ -165,6 +200,15 @@ recognition.lang = 'ja-JP'; // 日语
 
 编辑 `src/types.ts` 中的 `Category` 类型，然后在各组件中添加对应的标签和图标。
 
+## ✅ 已完成功能
+
+- [x] 📱 PWA 支持 - 可添加到 iPhone 主屏幕
+- [x] 📱 Capacitor iOS 原生应用支持
+- [x] 🎙️ 移动端语音识别优化
+- [x] 📱 响应式设计和触摸优化
+- [x] 💾 离线支持（Service Worker）
+- [x] 🎨 iOS 安全区域适配
+
 ## 📝 开发计划
 
 - [ ] 添加任务截止日期
@@ -173,7 +217,7 @@ recognition.lang = 'ja-JP'; // 日语
 - [ ] 深色模式支持
 - [ ] 多语言支持
 - [ ] 云端同步（可选）
-- [ ] 移动端 PWA 支持
+- [ ] Android 应用支持
 
 ## 🤝 贡献
 

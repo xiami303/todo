@@ -120,14 +120,14 @@ function App() {
   }, [todos, searchQuery, filterPriority, filterCategory, showCompleted]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 py-8 px-4">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 py-4 sm:py-8 px-3 sm:px-4 safe-top safe-bottom">
+      <div className="max-w-4xl mx-auto pb-safe">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold text-white mb-2 drop-shadow-lg">
+        <div className="text-center mb-4 sm:mb-8">
+          <h1 className="text-3xl sm:text-5xl font-bold text-white mb-2 drop-shadow-lg">
             🎤 语音待办事项
           </h1>
-          <p className="text-white/90 text-lg">
+          <p className="text-white/90 text-sm sm:text-lg">
             支持语音输入的智能待办清单
           </p>
         </div>
@@ -136,7 +136,7 @@ function App() {
         <Stats todos={todos} />
 
         {/* Main Card */}
-        <div className="bg-white rounded-2xl shadow-2xl p-6 mb-6">
+        <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 mb-4 sm:mb-6 touch-manipulation">
           {/* Add Todo Form */}
           <AddTodoForm
             inputText={inputText}
@@ -204,7 +204,7 @@ function App() {
           )}
 
           {/* Todo List */}
-          <div className="mt-6 space-y-3 max-h-[500px] overflow-y-auto scrollbar-hide">
+          <div className="mt-6 space-y-3 max-h-[400px] sm:max-h-[500px] overflow-y-auto scrollbar-hide">
             {filteredTodos.length === 0 ? (
               <div className="text-center py-12 text-gray-400">
                 <Circle className="w-16 h-16 mx-auto mb-4 opacity-30" />

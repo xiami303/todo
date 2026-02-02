@@ -28,8 +28,9 @@ export const useSpeechRecognition = (): SpeechRecognitionHook => {
 
     const recognition = new SpeechRecognition();
     recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.interimResults = true; // 启用中间结果，提供更好的反馈
     recognition.lang = 'zh-CN'; // Support Chinese
+    recognition.maxAlternatives = 1; // 只返回最可能的结果
 
     recognition.onstart = () => {
       setIsListening(true);
@@ -37,8 +38,14 @@ export const useSpeechRecognition = (): SpeechRecognitionHook => {
     };
 
     recognition.onresult = (event: any) => {
-      const transcript = event.results[0][0].transcript;
+      const last = event.results.length - 1;
+      const transcript = event.results[last][0].transcript;
       setTranscript(transcript);
+      
+      // 如果是最终结果，自动停止
+      if (event.results[last].isFinal) {
+        recognition.stop();
+      }
     };
 
     recognition.onerror = (event: any) => {
