@@ -1,0 +1,10 @@
+node_modules
+.git
+ios
+android
+scripts
+*.md
+.DS_Store
+.env.local
+.vscode
+.idea

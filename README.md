@@ -2,10 +2,14 @@
 
 一个现代化的个人待办事项应用，支持**语音输入**功能，让任务管理更加高效便捷。
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/xiami303/todo)
+
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.0.8-purple)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3.6-cyan)
+![PWA](https://img.shields.io/badge/PWA-Ready-green)
+![iOS](https://img.shields.io/badge/iOS-Supported-blue)
 
 ## ✨ 核心功能
 
@@ -70,14 +74,24 @@ npm run icons:generate
 - 📖 **PWA 安装**（推荐）：查看 [QUICK_START_IOS.md](./QUICK_START_IOS.md)
 - 📖 **原生应用构建**：查看 [IOS_INSTALLATION_GUIDE.md](./IOS_INSTALLATION_GUIDE.md)
 
+## 🚀 一键部署
+
+点击下方按钮，一键部署到 Vercel（完全免费）：
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/xiami303/todo)
+
+部署完成后即可在浏览器访问，或在 iPhone 上添加到主屏幕使用。
+
+**详细部署指南**：[VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
+
 ## 📱 在 iPhone 上使用
 
 ### 方式一：PWA（推荐 - 无需 Mac）
 
-1. 部署到 Vercel/Netlify（免费）
-2. 在 iPhone Safari 打开网址
-3. 点击"分享" → "添加到主屏幕"
-4. 像原生 App 一样使用
+1. **部署到 Vercel**（点击上方按钮，2分钟完成）
+2. **在 iPhone Safari 打开网址**
+3. **点击"分享" → "添加到主屏幕"**
+4. **像原生 App 一样使用**
 
 **详细步骤**：[QUICK_START_IOS.md](./QUICK_START_IOS.md)
 
