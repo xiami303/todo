@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384" height="384" viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="384" height="384" rx="76.80000000000001" fill="url(#grad1)"/>
+  
+  <!-- Microphone Icon -->
+  <g transform="translate(192, 192)">
+    <!-- Mic body -->
+    <rect x="-30.72" y="-96" width="61.44" height="115.19999999999999" rx="30.72" fill="white"/>
+    
+    <!-- Mic stand -->
+    <path d="M -57.599999999999994 57.599999999999994 Q -57.599999999999994 96, 0 96 Q 57.599999999999994 96, 57.599999999999994 57.599999999999994" 
+          stroke="white" stroke-width="7.68" fill="none"/>
+    
+    <!-- Mic base -->
+    <line x1="0" y1="96" x2="0" y2="122.88" stroke="white" stroke-width="7.68"/>
+    <line x1="-38.400000000000006" y1="122.88" x2="38.400000000000006" y2="122.88" stroke="white" stroke-width="7.68" stroke-linecap="round"/>
+    
+    <!-- Checkmark -->
+    <circle cx="76.80000000000001" cy="-76.80000000000001" r="46.08" fill="white" opacity="0.9"/>
+    <path d="M 53.760000000000005 -76.80000000000001 L 69.12 -61.44 L 99.84 -92.16" 
+          stroke="url(#grad1)" stroke-width="9.600000000000001" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
