@@ -1,6 +1,6 @@
 {
   "name": "voice-todo-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "个人待办事项应用，支持语音输入",
   "type": "module",
   "scripts": {
