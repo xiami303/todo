@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Plus, Mic, MicOff, Search, Filter, Trash2, CheckCircle2, Circle, AlertCircle } from 'lucide-react';
+import { Search, Filter, Trash2, Circle, AlertCircle } from 'lucide-react';
 import { Todo, Priority, Category } from './types';
 import { useSpeechRecognition } from './hooks/useSpeechRecognition';
 import { saveTodos, loadTodos } from './utils/storage';
